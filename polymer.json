@@ -1,0 +1,9 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/max-app/max-app.html",
+  "fragments": [
+    "src/max-header/max-header.html",
+    "src/max-social-bar/max-social-bar.html",
+    "src/max-footer/max-footer.html"
+  ]
+}

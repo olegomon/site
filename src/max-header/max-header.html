@@ -1,0 +1,25 @@
+<html><head><meta charset="UTF-8"><link rel="import" href="../max-app/max-app.html"></head><body><dom-module id="max-header">
+    <template>
+        <style is="custom-style" include="iron-flex iron-flex-alignment">:host{display:block;}paper-toolbar{height:320px;background-color:transparent;overflow:visible;--paper-toolbar-title:{@apply (--app-font-style);};-webkit-box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.20);-moz-box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.20);box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.20);}.bottom-text{-webkit-transform:translateZ(0);transform:translateZ(0);font-size:20px;padding-bottom:10px;width:100%;}.hanging-bar{position:absolute;right:0;bottom:-46px;@apply (--layout-horizontal);}.hanging-bar paper-icon-button{margin-left:8px;color:darkred;width:64px;height:64px;}</style>
+
+        <paper-toolbar>
+            <div class="bottom bottom-text" self-end="">
+                <div class="title">#maximheidt</div>
+                
+                <div class="hanging-bar layout horizontal flex">
+                    <paper-icon-button on-tap="_onIconClicked" class="bottom bookmark" icon="bookmark"></paper-icon-button>
+                </div>
+            </div>
+        </paper-toolbar>
+
+    </template>
+    <script>
+        Polymer({
+            is: 'max-header',
+            _onIconClicked() {
+                this.fire('scroll-top');
+            }
+        });
+    </script>
+</dom-module>
+</body></html>
