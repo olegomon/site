@@ -1,8 +1,1 @@
-const gulp = require('gulp');
-const imagemin = require('gulp-imagemin');
-
-gulp.task('default', () =>
-    gulp.src('images/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
-);
+const gulp=require("gulp"),imagemin=require("gulp-imagemin"),responsive=require("gulp-responsive");gulp.task("default",function(){return gulp.src("images/**/*").pipe(imagemin()).pipe(gulp.dest("assets/images"))}),gulp.task("images",["images-app","images-instagram","images-cover"]),gulp.task("images-instagram",function(){return gulp.src(["images/instagram/*.{jpg,jpeg,png}"]).pipe(responsive({"*":[{width:375,rename:{suffix:"-medium",extname:".jpg"}},{width:480,rename:{suffix:"-large",extname:".jpg"}},{width:768,rename:{suffix:"-extralarge",extname:".jpg"}}]},{progressive:!0,withMetadata:!1,errorOnEnlargement:!1})).pipe(gulp.dest("assets/images/instagram"))}),gulp.task("images-cover",function(){return gulp.src(["images/*-cover.{jpg,jpeg,png}"]).pipe(responsive({"*":[{width:384,rename:{suffix:"-small",extname:".jpg"}},{width:768,rename:{suffix:"-middle",extname:".jpg"}},{width:1024,rename:{suffix:"-large",extname:".jpg"}},{width:1600,rename:{suffix:"-xlarge",extname:".jpg"}}]},{progressive:!0,withMetadata:!1,errorOnEnlargement:!1})).pipe(gulp.dest("assets/images"))}),gulp.task("images-app",function(){return gulp.src(["images/*.{jpg,jpeg,png}"]).pipe(responsive({"*":[{width:375,rename:{suffix:"-medium",extname:".jpg"}},{width:480,rename:{suffix:"-large",extname:".jpg"}}]},{progressive:!0,withMetadata:!1,errorOnEnlargement:!1})).pipe(gulp.dest("assets/images"))});

@@ -869,7 +869,7 @@ for(n in this._instanceProps)e._addPropertyEffect(n,"function",this._createInsta
 </div><dom-module id="max-app">
     <template>
 
-        <style is="custom-style" include="iron-flex iron-flex-alignment">:host{@apply (--layout);-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}paper-scroll-header-panel{position:absolute;top:0;right:0;bottom:0;left:0;--paper-scroll-header-panel-full-header:{background-image:url(../../images/cover.jpg);};--paper-scroll-header-panel-condensed-header:{background-color:var(--app-primary-color-dark);};--paper-scroll-header-container:{background-color:var(--app-secondary-color);};}paper-audio-player{margin:0;}paper-card{--paper-card-header-text:{@apply (--app-font-style);};}max-social-bar{padding-top:1em;}.hash{margin-top:1em;margin-bottom:1em;color:var(--app-primary-text-color);}.hash:before{content:'#';}.content{@apply (--layout-vertical);background-color:whitesmoke;}.content{max-width:1024px;padding:16px 24px;margin:0 auto;}.image-container{@apply (--layout);@apply (--layout-center-justified);@apply (--layout-wrap);}.image-cover{padding:12px;max-width:500px;margin:4px;transform:scale3d(1, 1, 1);-webkit-transform:scale3d(1, 1, 1);transition-duration:250ms;-webkit-transition-duration:250ms;transition-property:all;-webkit-transition-property:all;}.image-cover:hover{-webkit-transform:scale3d(1.05, 1.05, 1.05);transform:scale3d(1.05, 1.05, 1.05);z-index:1;}.about-container{color:var(--app-primary-text-color);-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;@apply (--layout-vertical);}.profile-image{border-radius:50%;border:4px solid var(--app-primary-color);--iron-image-height:180px;--iron-image-width:180px;align-self:center;}@media (max-width: 600px){.content{}.image-cover{}}@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait){.content{padding:16px;}}@media all and (min-width: 361px) and (orientation: portrait){}@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape){}@media all and (min-width: 481px) and (orientation: landscape){}@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape){}@media all and (min-width: 961px) and (orientation: landscape){}@media all and (min-width: 600px) and (orientation: portrait){}@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait){}@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape){}@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3){}@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape){}@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3){.about-container{@apply (--layout-horizontal);}.about-container > div{margin-right:2em;}.about-container > div:last-child{margin-right:0;}}@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape){.about-container{@apply (--layout-horizontal);}}@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3){.image-cover{max-width:480px;}.about-container{@apply (--layout-horizontal);}}@media all and (min-width: 1281px) and (max-width: 1600px){.about-container{@apply (--layout-horizontal);}}@media all and (min-width: 1601px) and (max-width: 1920px){.about-container{@apply (--layout-horizontal);}}</style>
+        <style is="custom-style" include="iron-flex iron-flex-alignment">:host{--app-header-background-image:url('../../assets/images/header-cover-xlarge.jpg');@apply (--layout);-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}paper-scroll-header-panel{position:absolute;top:0;right:0;bottom:0;left:0;--paper-scroll-header-panel-full-header:{background-image:var(--app-header-background-image);};--paper-scroll-header-panel-condensed-header:{background-color:var(--app-primary-color-dark);};--paper-scroll-header-container:{background-color:var(--app-secondary-color);};}paper-audio-player{margin:0;}paper-card{--paper-card-header-text:{@apply (--app-font-style);};}max-social-bar{padding-top:1em;}.hash{margin-top:1em;margin-bottom:1em;color:var(--app-primary-text-color);}.hash:before{content:'#';}.content{@apply (--layout-vertical);background-color:whitesmoke;}.content{max-width:1024px;padding:16px 24px;margin:0 auto;}.image-container{@apply (--layout);@apply (--layout-center-justified);@apply (--layout-wrap);}.image-cover{padding:12px;max-width:500px;margin:4px;transform:scale3d(1, 1, 1);-webkit-transform:scale3d(1, 1, 1);transition-duration:250ms;-webkit-transition-duration:250ms;transition-property:all;-webkit-transition-property:all;}.image-cover:hover{-webkit-transform:scale3d(1.05, 1.05, 1.05);transform:scale3d(1.05, 1.05, 1.05);z-index:1;}.about-container{color:var(--app-primary-text-color);-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;@apply (--layout-vertical);}.profile-image{border-radius:50%;border:4px solid var(--app-primary-color);--iron-image-height:180px;--iron-image-width:180px;align-self:center;}@media (max-width: 600px){.content{}.image-cover{}}@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait){.content{padding:16px;}}@media all and (min-width: 361px) and (orientation: portrait){}@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape){}@media all and (min-width: 481px) and (orientation: landscape){}@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape){}@media all and (min-width: 961px) and (orientation: landscape){}@media all and (min-width: 600px) and (orientation: portrait){}@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait){}@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape){}@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3){}@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape){}@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3){.about-container{@apply (--layout-horizontal);}.about-container > div{margin-right:2em;}.about-container > div:last-child{margin-right:0;}}@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape){.about-container{@apply (--layout-horizontal);}}@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3){.image-cover{max-width:480px;}.about-container{@apply (--layout-horizontal);}}@media all and (min-width: 1281px) and (max-width: 1600px){.about-container{@apply (--layout-horizontal);}}@media all and (min-width: 1601px) and (max-width: 1920px){.about-container{@apply (--layout-horizontal);}}</style>
 
 
         <paper-scroll-header-panel id="panel" condenses="" keep-condensed-header="" header-height="320" condensed-header-height="72">
@@ -885,15 +885,15 @@ for(n in this._instanceProps)e._addPropertyEffect(n,"function",this._createInsta
                 <h1 class="hash">music</h1>
 
                 <section class="layout horizontal center center">
-                    <paper-card image="/images/regulate-cover-mid.jpg">
+                    <paper-card image="/assets/images/regulate-cover-large.jpg">
                         <div class="card-content">
-                            <paper-audio-player title="" src="/audio/regulate.mp3"></paper-audio-player>
+                            <paper-audio-player title="" src="/assets/audio/regulate.mp3"></paper-audio-player>
                         </div>
                     </paper-card>
                 </section>
 
                 <h1 class="hash">about_me</h1>
-                <iron-image class="profile-image" src="/images/profile-small.jpg"></iron-image>
+                <iron-image fade="" class="profile-image" src="/assets/images/profile-medium.jpg"></iron-image>
                 <section class="about-container">
 
                     <div>
@@ -962,31 +962,30 @@ for(n in this._instanceProps)e._addPropertyEffect(n,"function",this._createInsta
 
             ready() {
                 this.images = [
-                    {href: '/images/instagram/IMG_3164.jpeg'},
-                    {href: '/images/instagram/homepage_Fotor.png'},
-                    {href: '/images/instagram/IMG_2995.jpeg'},
-                    {href: '/images/instagram/IMG_3094.jpeg'},
-                    {href: '/images/instagram/IMG_3245.jpeg'},
-                    {href: '/images/instagram/IMG_3375.jpeg'},
-                    {href: '/images/instagram/IMG_3364.jpeg'},
-                    {href: '/images/instagram/IMG_5561.jpeg'},
-                    {href: '/images/instagram/IMG_9154.jpeg'},
-                    {href: '/images/instagram/IMG_8822.jpeg'},
-                    {href: '/images/instagram/FullSizeRender-2.jpg'},
-                    {href: '/images/instagram/IMG_0303.jpeg'},
-                    {href: '/images/instagram/IMG_2191.jpeg'},
-                    {href: '/images/instagram/IMG_2418.jpeg'},
-                    {href: '/images/instagram/IMG_2604.jpeg'},
-                    {href: '/images/instagram/IMG_2904.jpeg'},
-                    {href: '/images/instagram/IMG_2921.jpeg'},
 
-                    {href: '/images/instagram/FullSizeRender-1.jpg'},
-                    {href: '/images/instagram/FullSizeRender-4.jpg'},
-                    {href: '/images/instagram/maximheidt-regulate-instagram.jpg'},
-                    {href: '/images/instagram/maximheidt-regulate-iPhone.jpg'},
-                    {href: '/images/instagram/maximheidt_cover_playing_V1_itunes.jpg'},
-                    {href: '/images/instagram/maximheidt_cover_stereo_love.jpg'},
-                    {href: '/images/instagram/maximheidt_regulate-cover.jpg'}
+                    {href: '/assets/images/instagram/IMG_3164-large.jpg'},
+                    {href: '/assets/images/instagram/homepage_Fotor-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_3245-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_3375-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_3538-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_3834-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_3364-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_5561-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_9154-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_3613-large.jpg'},
+                    {href: '/assets/images/instagram/FullSizeRender-2-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_0303-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_2191-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_2604-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_2904-large.jpg'},
+                    {href: '/assets/images/instagram/IMG_2921-large.jpg'},
+
+                    {href: '/assets/images/instagram/FullSizeRender-1-large.jpg'},
+                    {href: '/assets/images/instagram/maximheidt-regulate-instagram-large.jpg'},
+                    {href: '/assets/images/instagram/maximheidt-regulate-iPhone-large.jpg'},
+                    {href: '/assets/images/instagram/maximheidt_cover_playing_V1_itunes-large.jpg'},
+                    {href: '/assets/images/instagram/maximheidt_cover_stereo_love-large.jpg'},
+                    {href: '/assets/images/instagram/maximheidt_regulate-cover-large.jpg'}
                 ];
             }
         });
