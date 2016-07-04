@@ -3,17 +3,19 @@
   "description": "Homepage",
   "main": "index.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
+    "polymer": "Polymer/polymer#^1.6.0",
     "paper-scroll-header-panel": "PolymerElements/paper-scroll-header-panel#^1.0.15",
     "paper-elements": "PolymerElements/paper-elements#^1.0.7",
     "iron-elements": "PolymerElements/iron-elements#^1.0.10",
-    "app-layout": "PolymerElements/app-layout#^0.9.1",
-    "paper-audio-player": "^0.2.1"
+    "paper-audio-player": "master"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
     "web-component-tester": "^4.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "resolutions": {
+    "paper-audio-player": "0.2.1"
   }
 }
