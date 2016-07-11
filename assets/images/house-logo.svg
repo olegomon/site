@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="295" y="61" width="54" height="96"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="54" height="96" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="256 63 384 191 128 191"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="256" height="128" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="128" y="196" width="256" height="256"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="256" height="256" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="162" y="356" width="54" height="96"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="54" height="96" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="chimney" stroke="#D81F17" mask="url(#mask-2)" stroke-width="12" xlink:href="#path-1"></use>
+        <use id="roof" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="8" fill="#D81F17" xlink:href="#path-3"></use>
+        <use id="house" stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="8" fill="#4169E1" xlink:href="#path-5"></use>
+        <use id="door" stroke="#D81F17" mask="url(#mask-8)" stroke-width="12" fill="#FFFFFF" xlink:href="#path-7"></use>
+        <circle id="holder" fill="#000000" cx="199" cy="409" r="3"></circle>
+        <path d="M335.971464,121 C335.649954,123.80325 332.651482,126 329,126 C325.134007,126 322,123.537566 322,120.5 C322,117.462434 325.134007,115 329,115 C330.487248,115 331.866167,115.364426 333,115.985827 L333,97.592401 L320,87.1594718 L320,78 L336,89.7297832 L336,97.5 L336,121 L335.971464,121 Z M319.971464,103 C319.649954,105.80325 316.651482,108 313,108 C309.134007,108 306,105.537566 306,102.5 C306,99.4624339 309.134007,97 313,97 C314.487248,97 315.866167,97.3644259 317,97.9858273 L317,78 L320,78 L320,103 L319.971464,103 Z" id="Combined-Shape" fill="#000000"></path>
+    </g>
+</svg>

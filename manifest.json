@@ -1,0 +1,7 @@
+{
+  "name": "maxim-heidt",
+  "short_name": "maxim-heidt",
+  "description": "Homepage",
+  "start_url": "/",
+  "display": "standalone"
+}
