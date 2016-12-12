@@ -1,9 +1,38 @@
 <html><head><meta charset="UTF-8"><link rel="import" href="../max-app/max-app.html"></head><body><dom-module id="max-footer">
     <template>
-        <style is="custom-style" include="iron-flex iron-flex-alignment">:host{max-width:1024px;padding:16px 24px;margin:0 auto;color:whitesmoke;height:48px;background-color:rgb(29, 39, 48);@apply (--layout);@apply (--layout-center);@apply (--layout-justified);}iron-icon{margin-right:6px;}.icon-edwin{--iron-icon-width:48px;--iron-icon-height:48px;}a,
+        <style is="custom-style" include="iron-flex iron-flex-alignment">
+
+            :host {
+                max-width: 1024px;
+                padding: 16px 24px;
+                margin: 0 auto;
+
+                color: whitesmoke;
+                height: 48px;
+                background-color: rgb(29, 39, 48);
+                @apply(--layout);
+                @apply(--layout-center);
+                @apply(--layout-justified);
+            }
+
+            iron-icon {
+                margin-right: 6px;
+            }
+
+            .icon-edwin {
+                --iron-icon-width: 48px;
+                --iron-icon-height: 48px;
+            }
+
+            a,
             a:hover,
             a:focus,
-            a:visited{text-decoration:none;color:var(--app-secondary-text-color);}</style>
+            a:visited {
+                text-decoration: none;
+                color: var(--app-secondary-text-color);
+            }
+
+        </style>
 
         <a href="mailto:info@maximheidt.com">
             <iron-icon icon="mail"></iron-icon><span>info@maximheidt.com</span>
@@ -13,13 +42,6 @@
         </a>
 
     </template>
-    <script>
-        Polymer({
-            is: 'max-footer',
-            _onIconClicked() {
-                this.fire('scroll-top');
-            }
-        });
-    </script>
+    <script>Polymer({is:"max-footer",_onIconClicked:function(){this.fire("scroll-top")}});</script>
 </dom-module>
 </body></html>

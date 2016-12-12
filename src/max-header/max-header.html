@@ -1,6 +1,69 @@
 <html><head><meta charset="UTF-8"><link rel="import" href="../max-app/max-app.html"></head><body><dom-module id="max-header">
     <template>
-        <style is="custom-style" include="iron-flex iron-flex-alignment">:host{display:block;}paper-toolbar{height:275px;background-color:transparent;overflow:visible;--paper-toolbar-title:{@apply (--app-font-style);};-webkit-box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.20);-moz-box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.20);box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.20);}.bottom-text{-webkit-transform:translateZ(0);transform:translateZ(0);font-size:20px;padding-bottom:10px;width:100%;}.hanging-bar{position:absolute;right:-4px;bottom:-40px;@apply (--layout-horizontal);}.hanging-bar paper-icon-button{margin-left:8px;width:72px;height:72px;}.house-logo{--iron-image-width:48px;}</style>
+        <style is="custom-style" include="iron-flex iron-flex-alignment">
+
+            :host {
+                display: block;
+            }
+
+            paper-toolbar {
+                /* custom toolbar height */
+                height: 275px;
+                /*height: auto;*/
+                background-color: transparent;
+                overflow: visible;
+
+                --paper-toolbar-title: {
+                    @apply(--app-font-style);
+                };
+
+                -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.20);
+                -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.20);
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.20);
+            }
+
+            .bottom-text {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                font-size: 20px;
+                padding-bottom: 10px;
+                width: 100%;
+            }
+
+            .hanging-bar {
+                position: absolute;
+
+                right: -4px;
+                bottom: -40px;
+
+                /*right: 6px;*/
+                /*bottom: -30px;*/
+                @apply(--layout-horizontal);
+            }
+
+            .hanging-bar paper-icon-button {
+                margin-left: 8px;
+                /*color: darkred;*/
+                width: 72px;
+                height: 72px;
+            }
+
+            .house-logo {
+                /*max-width: 128px;*/
+                /*max-height: 128px;*/
+                /*width: 128px;*/
+                /*height: 128px;*/
+
+                /*background-color: rgb(245, 245, 220);*/
+                /*border-color: var(--app-primary-color);*/
+                /*border-width: 2px;*/
+                /*border-style: solid;*/
+
+                --iron-image-width: 48px;
+                /*--iron-image-height: 128px;*/
+            }
+
+        </style>
 
         <paper-toolbar>
             <div class="bottom bottom-text" self-end="">
@@ -9,20 +72,13 @@
                 <div class="hanging-bar layout horizontal flex">
                     
                     
-                    <paper-icon-button src="/assets/images/house-logo.svg" on-tap="_onIconClicked" class="bottom house-logo"></paper-icon-button>
+                    <paper-icon-button src="/assets/images/house-icon.png" on-tap="_onIconClicked" class="bottom house-logo"></paper-icon-button>
                     
                 </div>
             </div>
         </paper-toolbar>
         
     </template>
-    <script>
-        Polymer({
-            is: 'max-header',
-            _onIconClicked() {
-                this.fire('scroll-top');
-            }
-        });
-    </script>
+    <script>Polymer({is:"max-header",_onIconClicked:function(){this.fire("scroll-top")}});</script>
 </dom-module>
 </body></html>
